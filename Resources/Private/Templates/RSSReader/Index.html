@@ -1,0 +1,26 @@
+<f:layout name="Default" />
+
+<f:section name="Content">
+
+	<f:if condition="{rss}">
+		<f:then>
+
+			<h2><a href="{rss.info.link}" title="{rss.info.description}" target="{linkTarget}">{rss.info.title}</a></h2>
+			<ul>
+				<f:for each="{rss.items}" as="item" iteration="itemIterator">
+					<f:if condition="{itemIterator.index}<{maxItems}">
+						<li>
+							<a href="{item.link}" target="{linkTarget}">{item.title}</a> <i><f:format.date date="{item.date}" format="d.m.Y H:i" /></i>
+						</li>
+					</f:if>	
+				</f:for>
+			</ul>
+
+		</f:then>
+		<f:else>
+			Please add a valid RSS XML URL.
+		</f:else>
+	</f:if>
+
+
+</f:section>

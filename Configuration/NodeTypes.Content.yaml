@@ -1,0 +1,50 @@
+'Dotpulse.RSSReader:RSSReader':
+  superTypes:
+    'TYPO3.Neos.Content': 'TYPO3.Neos:Content'
+  ui:
+    label: 'RSS Reader'
+    icon: 'icon-book'
+    group: 'special'
+    inspector:
+      groups:
+        rssreader:
+          label: 'RSS Reader'
+          position: 200
+          tab: meta
+  properties:
+    url:
+      type: string
+      defaultValue: 'http://blog.dotpulse.ch/feed/'
+      ui:
+        inspector:
+          group: rssreader
+        label: Feed URL
+        reloadIfChanged: true
+    maxItems:
+      type: integer
+      defaultValue: 3
+      ui:
+        inspector:
+          group: rssreader
+        label: Max. Items
+        reloadIfChanged: true
+    linkTarget:
+      type: string
+      defaultValue: '_blank'
+      ui:
+        label: 'Link Target'
+        reloadIfChanged: true
+        inspector:
+          group: rssreader
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              _blank:
+                label: '_blank'
+              _self:
+                label: '_self'
+
+'TYPO3.Neos.Content':
+  constraints:
+    nodeTypes:
+      'Dotpulse.RSSReader:RSSReader' : true

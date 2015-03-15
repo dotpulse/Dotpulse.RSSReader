@@ -1,0 +1,26 @@
+{
+    "name": "dotpulse/rssreader",
+    "type": "typo3-flow-plugin",
+    "description": "List Links from RSS Feed",
+    "version": "0.1.0",
+    "license": "GPL-3.0+",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Dotpulse\\RSSReader": "Classes"
+        }
+    },
+    "support": {
+        "email": "webmaster@dotpulse.ch"
+    },
+    "authors": [
+        {
+            "name": "Stefan Bruggmann",
+            "email": "stefan.bruggmann@dotpulse.ch",
+            "homepage": "https://github.com/sbruggmann",
+            "role": "Developer"
+        },
+    ]
+}

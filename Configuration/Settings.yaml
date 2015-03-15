@@ -1,0 +1,12 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'Dotpulse.RSSReader': true
+
+Dotpulse:
+  Plugin:
+    RSSReader:
+      templateRootPath: 'resource://Dotpulse.RSSReader/Private/Templates/'
+      partialRootPath: 'resource://Dotpulse.RSSReader/Private/Partials/'
+      layoutRootPath: 'resource://Dotpulse.RSSReader/Private/Layouts/'

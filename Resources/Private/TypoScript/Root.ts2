@@ -1,0 +1,12 @@
+prototype(Dotpulse.RSSReader:RSSReader) < prototype(TYPO3.Neos:Plugin) {
+	package = 'Dotpulse.RSSReader'
+	controller = 'RSSReader'
+	action = 'index'
+	# @override.configuration = ${Configuration.setting('Dotpulse.RSSReader')}
+	# attributes {
+		# url = ${q(node).property('link')}
+		# url.@process.convertUris = TYPO3.Neos:ConvertUris {
+			# forceConversion = true
+		# }
+	# }
+}

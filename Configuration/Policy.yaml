@@ -1,0 +1,8 @@
+resources:
+  methods:
+    DotpulseRSSReader: 'method(.*Controller->(index)Action())'
+
+acls:
+  Everybody:
+    methods:
+      DotpulseRSSReader: GRANT
